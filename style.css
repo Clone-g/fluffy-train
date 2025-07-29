@@ -1,0 +1,376 @@
+:root {
+    --KFCfont: serif;
+}
+/* Body Start */
+body {
+    scroll-behavior: smooth;
+    background-color: whitesmoke;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--KFCfont);
+}
+/* Body End */
+/* Navbar Start */
+.Logo {
+    width: 150px;
+    margin: 0px 20px;
+}
+
+.navbar-brand {
+    font-family: serif;
+    letter-spacing: 3px;
+}
+
+.nav-item a {
+    font-family: serif;
+    font-size: large;
+    color: whitesmoke;
+    position: relative;
+}
+
+.brand-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+    .brand-text {
+        display: block;
+        font-size: 0.95rem;
+        text-align: center;
+        line-height: 1.3;
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .navbar-toggler {
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar {
+        height: 220px;
+    }
+}
+@media screen and (min-width: 992px) {
+
+    .nav-item a::before {
+        content: "";
+        position: absolute;
+        background-color: whitesmoke;
+        width: 0;
+        height: 1px;
+        left: 7px;
+        bottom: 7px;
+    }
+
+    .nav-item a:hover::before {
+        width: 80%;
+        transition: 0.5s;
+    }
+
+    .navbar {
+        height: 120px;
+    }
+}
+/* Navbar End */
+
+/* Header Start */
+.heading {
+    font-family: var(--KFCfont);
+}
+
+.bu1,.bu2 {
+    transition: 0.5s;
+}
+
+.bu1:hover,.bu2:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        height: 55vh;
+    }
+    
+}
+/* Header End */
+
+/* Annual start */
+li a {
+    color: black;
+    font-size: 20px;
+    font-family: var(--KFCfont);
+    transition: 0.5s;
+    text-align: justify;
+    font-size: medium;
+}
+/* Annual end */
+
+/* About Start */
+.aboutText {
+    text-align: justify;
+}
+
+@media screen and (min-width:1400px) {
+    .aboutImage{
+        height: 400px;
+    }
+    .aboutImage1 {
+        height: 200px;
+    }
+}
+
+/* About End */
+
+/* Events Start */
+@media screen and (min-width: 0px) {
+    .eventImage {
+        height: 250px;
+    }
+    
+}
+@media screen and (min-width: 500px) {
+    .eventImage {
+        height: 300px;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .eventImage {
+        height: 480px;
+    }
+    
+}
+@media screen and (min-width: 992px) {
+    .eventImage {
+        height: 580px;
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+    .eventImage {
+        height: 620px;
+    }
+    
+}
+@media screen and (min-width: 1400px) {
+    .eventImage {
+        height: 680px;
+    }
+    
+}
+/* Events End */
+
+/* We NEED YOUR Help Start */
+.hthText {
+    text-align: justify;
+}
+/* We NEED YOUR Help End */
+/* Gallery Start */
+.mainslide img{
+    width: 400px;
+    height: 300px;
+}
+.imgArrow {
+    position: relative;
+    bottom: 180px;
+    width: 500px;
+}
+.imgPrev, .imgNext {
+    color: black;
+    transition: 0.4s;
+}
+.imgNext {
+    float: right;
+}
+.imgPrev:hover, .imgNext:hover {
+    color:grey
+}
+.imgPrev:hover {
+    transform: translate(-5px);
+}
+.imgNext:hover {
+    transform: translate(5px);
+}
+.smallImage img {
+    display: none;
+}
+@media  screen and (min-width: 768px) {
+    .smallImage img {
+        display: block;
+        height: 80px;
+    }
+    
+}
+@media  screen and (min-width: 992px) {
+    .smallImage img {
+        height: 90px;
+    }
+    .mainslide img{
+        width: 600px;
+        height: 400px;
+    }
+    .imgArrow {
+        width: 700px;
+        bottom: 220px;
+    }
+    
+}
+@media  screen and (min-width: 1200px) {
+    .smallImage img {
+        height: 100px;
+    }
+    .mainslide img{
+        width: 700px;
+        height: 500px;
+    }
+    .imgArrow {
+        width: 800px;
+        bottom: 250px;
+    }
+    
+}
+/* Gallery End */
+
+/* Contact Start */
+.contactDiv {
+    background-color: whitesmoke;
+    height: 100px;
+}
+.contactIcon {
+    color: blue;
+}
+.contactDiv:hover {
+    background-color: transparent;
+}
+.contactIcon:hover {
+    opacity: 0.5;
+}
+@media screen and (min-width: 0px) {
+    .contactDiv {
+        height: 130px;
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+    .contactDiv {
+        height: 150px;
+    }
+    
+}
+/* Contact End */
+
+/* Footer Start */
+.footerImg1 {
+    display: none;
+}
+.footerImg2 {
+    width: 25%
+}
+@media  screen and (min-width: 992px) {
+    .footerImg2 {
+        display: none;
+    }
+    .footerImg1 {
+        display: inline;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .footerImg1 {
+        width: 75%;
+    }
+}
+.follow {
+    text-decoration: none;
+    color: whitesmoke;
+    font: var(--KFCfont);
+}
+
+.textbutton {
+    background: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: whitesmoke;
+    font: var(--KFCfont);
+    font-size: 18px;
+}
+/* Footer End */
+
+/* Preloader Start */
+#preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+#preloader::before, #preloader::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 4px solid;
+    animation: animate-preloader 2s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+#preloader::after {
+    animation-delay: -0.5s;
+}
+@keyframes animate-preloader {
+    0% {
+        width: 10px;
+        height: 10px;
+        top: calc(50% - 5px);
+        left: calc(50% - 5px);
+        opacity: 1;
+    }
+    100% {
+        width: 100px;
+        height: 100px;
+        top: calc(50% - 50px);
+        left: calc(50% - 50px);
+        opacity: 0;
+    }
+}
+/* Preloader End */
+
+/* Scroll to Top Button Start */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: blue; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 0px 10px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 30px; /* Increase font size */
+    transition: 0.6s; /* Add a transition on hover */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+    transform: translate(0px,-5px);
+  }
+/* Scroll to Top Button End */
+
+
+
+
+/* Active thumbnail styling */
+.smallImage.active img {
+    border: 3px solid blue;
+    opacity: 1;
+}
