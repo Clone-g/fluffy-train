@@ -51,11 +51,48 @@ h1,h2,h3,h4,h5,h6 {
         justify-content: center;
         align-items: center;
         background-color: whitesmoke;
+        cursor: pointer;
     }
 
     .navbar {
-        height: 220px;
+        height: auto; /* Don't fix height! */
+        position: relative;
     }
+
+    /* Hide navbar menu by default */
+    .navbar-menu {
+        display: none;
+        flex-direction: row; /* Horizontal */
+        justify-content: center;
+        align-items: center;
+        background: #fff; /* or your desired color */
+        position: absolute;
+        top: 60px; /* adjust based on your navbar height */
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        border-bottom: 1px solid #eee;
+        padding: 10px 0;
+    }
+
+    /* When menu is active, show it horizontally */
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-menu a {
+        margin: 0 15px;
+        padding: 8px 16px;
+        text-decoration: none;
+        color: #333;
+        border-radius: 4px;
+        transition: background 0.2s;
+    }
+
+    .navbar-menu a:hover {
+        background: #f2f2f2;
+    }
+}
 }
 @media screen and (min-width: 992px) {
 
